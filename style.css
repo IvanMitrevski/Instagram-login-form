@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'InstaFont';
+  src: 
+      local('Insta Font'),
+      local('Insta-Font'),
+      url(fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf) 
+      format('opentype');
+}
+
 .login-div{
   width: 430px;
   height: 700px;
@@ -6,4 +15,36 @@
   background: #ecf0f3;
   box-shadow: 13px 13px 20px #cbced1,
               -13px -13px 20px #ffffff;
+              position:relative;
+}
+
+.logo{
+  background: url("images/logo.png") center;
+  background-size: 100px 100px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  margin: 0 auto;
+  box-shadow: 
+    /* bottom right */
+    5px 5px 15px #a7aaaf,
+    /* top left */
+    -8px -8px 15px #ffffff
+  ;
+}
+
+.title{
+text-align: center;
+color: rgb(56, 66, 83);
+font-size: 2.5rem;
+padding-top: 1rem;
+font-family: 'InstaFont';
+
+  /* picture
+  background: url("/images/logo-text.png");
+  background-size: 175px 51px;
+  width: 175px; height: 51px;
+  filter: drop-shadow(5px 5px 10px #a7aaaf);
+  */
+
 }
