@@ -12,13 +12,14 @@
   height: 700px;
   padding: 60px 35px 35px 35px;
   border-radius: 40px;
-  background: #ecf0f3;
-  box-shadow: 13px 13px 20px #cbced1,
-              -13px -13px 20px #ffffff;
+  background: rgb(236, 240, 243);
+  box-shadow: 13px 13px 20px rgb(203, 206, 209),
+              -13px -13px 20px rgb(255, 255, 255);
               position:relative;
 }
 
-.logo{
+/*
+  .logo{
   background: url("images/logo.png") center;
   background-size: 100px 100px;
   width: 85px;
@@ -26,17 +27,16 @@
   border-radius: 50px;
   margin: 0 auto;
   box-shadow: 
-    /* bottom right */
-    5px 5px 15px #a7aaaf,
-    /* top left */
-    -8px -8px 15px #ffffff
-  ;
-}
+    5px 5px 15px rgb(167, 170, 175),
+    -8px -8px 15px rgb(255, 255, 255)
+    ;
+  }
+*/
 
 .title{
 text-align: center;
 color: rgb(56, 66, 83);
-font-size: 2.5rem;
+font-size: 4rem;
 padding-top: 1rem;
 font-family: 'InstaFont';
 
@@ -46,5 +46,27 @@ font-family: 'InstaFont';
   width: 175px; height: 51px;
   filter: drop-shadow(5px 5px 10px #a7aaaf);
   */
+}
 
+.fields{
+  padding: 75px 5px 5px 5px;
+  margin: 0px 30px;
+}
+
+.fields input{
+  width: 80%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  color: rgb(85, 85, 85);
+  padding: 20px 10px 20px 20px;
+  color: rgba(85, 85, 85, 0.356);
+}
+
+.username, .password{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px rgba(203, 206, 209, 0.5),
+                inset -8px -8px 8px rgba(255, 255, 255, 0.5);
 }
