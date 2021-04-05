@@ -10,14 +10,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .login-div{
+  margin: -50px auto 0;
   width: 430px;
-  height: 700px;
+  height: 600px;
   padding: 60px 35px 35px 35px;
   border-radius: 40px;
   background: rgb(236, 240, 243);
   box-shadow: 13px 13px 20px rgb(203, 206, 209),
               -13px -13px 20px rgb(255, 255, 255);
-              position:relative;
+  transform: scale(0.70,0.70);
 }
 
 /*
@@ -73,17 +74,15 @@ font-family: 'InstaFont';
                 inset -8px -8px 8px rgba(255, 255, 255, 0.5);
 }
 
-.signin{
+.btn-flex{
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 0px 50px;
-    
+    margin: 0px 20px;
 }
 
 .signin-btn{
   display: flex;
-  align-content: center;
   justify-content: center;
   outline: none;
   border: none;
@@ -93,19 +92,81 @@ font-family: 'InstaFont';
   border-radius: 30px;
   padding-top: 1.2rem;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Lato', sans-serif;
   color: rgb(253, 253, 253);
-  background: #24cfaa;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
   box-shadow: 3px 3px 8px rgb(177, 177, 177),
               -3px -3px 8px rgb(255, 255, 255);
   transition: .5s;
 }
 
-.signin-btn:hover{
-  background: #2fdbb6;
+.signin-btn:active{
+  background:linear-gradient(45deg, #5470ff, #7169ff, #ae53eb, #e74da4, #f84c85, #f56565);
 }
 
-.signin-btn:active{
-  background: #1da88a;
+.link-btn{
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+.link-clr{
+  color: rgb(56, 81, 133);
+}
+
+.icon{
+  margin: 0 7px;
+  transform: scale(1.20,1.20);
+}   
+
+.separator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 40px 18px;
+  padding-top: 20px;
+  position: relative;
+  top: .45em;
+}
+
+.line{
+  background-color: rgb(10, 8, 8);
+  height: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  background-color: rgb(199, 198, 198);
+}
+
+.sep-text{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(142, 142, 142, 1);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+    margin: 0 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.link{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.link a{
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
 }
