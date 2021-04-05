@@ -7,6 +7,8 @@
       format('opentype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 .login-div{
   width: 430px;
   height: 700px;
@@ -69,4 +71,41 @@ font-family: 'InstaFont';
     border-radius: 25px;
     box-shadow: inset 8px 8px 8px rgba(203, 206, 209, 0.5),
                 inset -8px -8px 8px rgba(255, 255, 255, 0.5);
+}
+
+.signin{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 50px;
+    
+}
+
+.signin-btn{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  height: 60px;
+  border-radius: 30px;
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: rgb(253, 253, 253);
+  background: #24cfaa;
+  box-shadow: 3px 3px 8px rgb(177, 177, 177),
+              -3px -3px 8px rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.signin-btn:hover{
+  background: #2fdbb6;
+}
+
+.signin-btn:active{
+  background: #1da88a;
 }
