@@ -120,13 +120,28 @@ font-family: 'InstaFont';
 }
 
 .link-clr{
-  color: rgb(56, 81, 133);
+  color: #385185;
 }
 
 .icon{
   margin: 0 7px;
   transform: scale(1.20,1.20);
-}   
+}
+
+.f-pass-btn{
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: normal;
+  word-spacing: normal;
+  color: #5851db;
+}
 
 .separator{
   display: flex;
