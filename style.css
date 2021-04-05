@@ -13,7 +13,7 @@
   margin: -50px auto 0;
   width: 430px;
   height: 600px;
-  padding: 60px 35px 35px 35px;
+  padding: 60px 35px 20px 35px;
   border-radius: 40px;
   background: rgb(236, 240, 243);
   box-shadow: 13px 13px 20px rgb(203, 206, 209),
@@ -22,6 +22,9 @@
 }
 
 .second-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: -105px auto;
   width: 430px;
   height: 55px;
@@ -33,34 +36,12 @@
   transform: scale(0.70,0.70);
 }
 
-/*
-  .logo{
-  background: url("images/logo.png") center;
-  background-size: 100px 100px;
-  width: 85px;
-  height: 85px;
-  border-radius: 50px;
-  margin: 0 auto;
-  box-shadow: 
-    5px 5px 15px rgb(167, 170, 175),
-    -8px -8px 15px rgb(255, 255, 255)
-    ;
-  }
-*/
-
 .title{
 text-align: center;
-color: rgb(56, 66, 83);
+color: rgb(60, 79, 111);
 font-size: 4rem;
 padding-top: 1rem;
 font-family: 'InstaFont';
-
-  /* picture
-  background: url("/images/logo-text.png");
-  background-size: 175px 51px;
-  width: 175px; height: 51px;
-  filter: drop-shadow(5px 5px 10px #a7aaaf);
-  */
 }
 
 .fields{
@@ -124,7 +105,7 @@ font-family: 'InstaFont';
   border: none;
   cursor: pointer;
   padding-top: 30px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   font-family: 'Lato', sans-serif;
   letter-spacing: normal;
@@ -146,8 +127,8 @@ font-family: 'InstaFont';
   outline: none;
   border: none;
   cursor: pointer;
-  padding-top: 30px;
-  font-size: 1.1rem;
+  padding-top: 35px;
+  font-size: 1.150rem;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   letter-spacing: normal;
@@ -186,14 +167,24 @@ font-family: 'InstaFont';
 }
 
 
-
-.link{
-  padding-top: 20px;
-  text-align: center;
+.no-acc{
+  color: rgba(38,38,38,0.9);
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 
-.link a{
-  text-decoration: none;
-  color: #aaa;
-  font-size: 15px;
+.sing-up-btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-top: 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: normal;
+  word-spacing: normal;
+  color:#3b5fff;
 }
