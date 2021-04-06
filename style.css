@@ -1,3 +1,8 @@
+/*
+=============== 
+Imports
+===============
+*/
 @font-face {
   font-family: 'InstaFont';
   src: 
@@ -9,19 +14,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/*
+=============== 
+Variables
+===============
+*/
+
+:root{
+  --clr-bg: rgb(236, 240, 243);
+  --clr-text-light: rgba(106, 103, 103, 0.9);
+  --clr-text-dark: rgba(38,38,38,0.9);
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --insta-gradient: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  --shadow: 13px 13px 20px rgb(203, 206, 209),
+            -13px -13px 20px rgb(255, 255, 255);
+  --inset-shadow: inset 8px 8px 8px rgba(203, 206, 209, 0.5),
+                  inset -8px -8px 8px rgba(255, 255, 255, 0.5);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+p{
+  margin:0;
+}
+
+/*
+=============== 
+Div containers
+===============
+*/
+
 .login-div{
   margin: -50px auto 0;
   width: 430px;
   height: 600px;
-  padding: 60px 35px 20px 35px;
+  padding: 60px 35px 30px 35px;
   border-radius: 40px;
-  background: rgb(236, 240, 243);
-  box-shadow: 13px 13px 20px rgb(203, 206, 209),
-              -13px -13px 20px rgb(255, 255, 255);
+  background: var(--clr-bg);
+  box-shadow: var(--shadow);
   transform: scale(0.70,0.70);
 }
 
-.second-div{
+.signup-div{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,39 +73,47 @@
   height: 55px;
   padding: 10px 35px 35px 35px;
   border-radius: 40px;
-  background: rgb(236, 240, 243);
-  box-shadow: 13px 13px 20px rgb(203, 206, 209),
-              -13px -13px 20px rgb(255, 255, 255);
+  background: var(--clr-bg);
+  box-shadow: var(--shadow);
   transform: scale(0.70,0.70);
 }
 
-p{
-  margin:0;
-}
+/*
+=============== 
+Title
+===============
+*/
 
 .title{
 text-align: center;
-/* color: rgb(60, 79, 111); */
 font-size: 4rem;
 padding-top: 1rem;
 font-family: 'InstaFont';
-  /* Fallback: Set a background color. */
-  background-color: red;
-  
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
 
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+/* Fallback: Set a background color. */
+background-color: rgb(115, 126, 223);
+
+/* Create the gradient. */
+background-image: var(--insta-gradient);
+
+/* Set the background size and repeat properties. */
+background-size: 100%;
+background-repeat: repeat;
+
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
 }
+
+/*
+=============== 
+Input fields
+===============
+*/
 
 .fields{
   padding: 75px 5px 5px 5px;
@@ -75,17 +126,25 @@ font-family: 'InstaFont';
   outline: none;
   background: none;
   font-size: 1rem;
-  color: rgb(85, 85, 85);
-  padding: 20px 10px 20px 20px;
-  color: rgba(85, 85, 85, 0.356);
+  padding: 20px 10px 20px 25px;
+  color: var(--clr-text-dark);
+}
+
+::placeholder{
+  color: var(--clr-text-light);
 }
 
 .username, .password{
     margin-bottom: 30px;
     border-radius: 25px;
-    box-shadow: inset 8px 8px 8px rgba(203, 206, 209, 0.5),
-                inset -8px -8px 8px rgba(255, 255, 255, 0.5);
+    box-shadow: var(--inset-shadow);
 }
+
+/*
+=============== 
+Buttons
+===============
+*/
 
 .btn-flex{
     display: flex;
@@ -93,6 +152,12 @@ font-family: 'InstaFont';
     justify-content: center;
     margin: 0px 20px;
 }
+
+/*
+=============== 
+Login button
+===============
+*/
 
 .signin-btn{
   display: flex;
@@ -105,18 +170,56 @@ font-family: 'InstaFont';
   border-radius: 30px;
   padding-top: 1.2rem;
   font-size: 1.2rem;
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
-  color: rgb(253, 253, 253);
-  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  box-shadow: 3px 3px 8px rgb(177, 177, 177),
-              -3px -3px 8px rgb(255, 255, 255);
+  font-weight: var(--fw-bold);
+  color: var(--clr-bg);
+  background:var(--insta-gradient);
+  box-shadow: var(--shadow);
   transition: .5s;
 }
 
 .signin-btn:active{
   background:linear-gradient(45deg, #5470ff, #7169ff, #ae53eb, #e74da4, #f84c85, #f56565);
 }
+
+/*
+==========
+Separator
+==========
+*/
+
+.separator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 40px 18px;
+  padding-top: 20px;
+  position: relative;
+  top: .45em;
+}
+
+.line{
+  height: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  background-color: rgb(199, 198, 198);
+}
+
+.sep-text{
+  margin: 0 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: var(--fw-bold);
+  line-height: 15px;
+  color: rgba(142, 142, 142, 1);
+}
+
+/*
+==============
+Facebook link 
+==============
+*/
 
 .link-btn{
   display: flex;
@@ -126,8 +229,7 @@ font-family: 'InstaFont';
   cursor: pointer;
   padding-top: 30px;
   font-size: 1.3rem;
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
+  font-weight: var(--fw-bold);
   letter-spacing: normal;
   word-spacing: normal;
 }
@@ -141,69 +243,47 @@ font-family: 'InstaFont';
   transform: scale(1.20,1.20);
 }
 
+/*
+=================
+Forgot pass link
+=================
+*/
+
 .f-pass-btn{
   display: flex;
   justify-content: center;
   outline: none;
   border: none;
   cursor: pointer;
-  padding-top: 35px;
+  margin-top: 35px;
   font-size: 1.150rem;
-  font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  font-weight: var(--fw-normal);
   letter-spacing: normal;
   word-spacing: normal;
   color: #5851db;
 }
 
-.separator{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 40px 18px;
-  padding-top: 20px;
-  position: relative;
-  top: .45em;
-}
+/*
+============
+Sign up div
+============
+*/
 
-.line{
-  background-color: rgb(10, 8, 8);
-  height: 1px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  position: relative;
-  background-color: rgb(199, 198, 198);
-}
-
-.sep-text{
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(142, 142, 142, 1);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 15px;
-    margin: 0 18px;
-  font-family: 'Lato', sans-serif;
-}
-
-
-.no-acc{
-  color: rgba(38,38,38,0.9);
+.signup-text{
   font-size: 1.3rem;
-  font-weight: 500;
-  font-family: 'Lato', sans-serif;
+  font-weight: var(--fw-normal);
   letter-spacing: normal;
   word-spacing: normal;
+  color: rgba(38,38,38,0.9);
 }
 
-.sing-up-btn{
+.singup-btn{
   outline: none;
   border: none;
   cursor: pointer;
   padding-top: 30px;
   font-size: 1.3rem;
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
+  font-weight: var(--fw-bold);
   letter-spacing: normal;
   word-spacing: normal;
   color:#3b5fff;
